@@ -9,20 +9,173 @@
     tools:context=".InicioTienda">
 
 
-    <ImageView
-        android:id="@+id/logoHappyBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/grupo2" />
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/cielo"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="PERFIL"
+            android:textColor="@color/red"
+            android:textSize="45sp"
+            android:textStyle="italic"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+    </LinearLayout>
+
+
+    <!-- Imagen con nombre "avatars" a la izquierda del texto "Nombre Completo" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@tools:sample/avatars"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre Completo"
+            android:textSize="28sp"
+            android:textStyle="italic"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <!-- Vista verde que ocupa todo el ancho de la página -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/verde"
+        android:gravity="center">
+
+        <!-- ImageView a la izquierda -->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/dinero"
+            android:layout_marginEnd="8dp" />
+
+        <!-- TextView centrado -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Información de Pago"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center" />
+
+        <!-- ImageView a la derecha -->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/dinero"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <!-- Texto "Método de pago" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Método de pago"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Opciones de pago -->
+        <Spinner
+            android:id="@+id/payment_methods_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Texto "Digitos de la tarjeta" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Digitos de la tarjeta"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Espacio para ingresar los dígitos de la tarjeta -->
+        <EditText
+            android:id="@+id/card_number_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Ingrese los dígitos de la tarjeta"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Texto "Fecha de vencimiento" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de vencimiento"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Layout horizontal para mes y año -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- Selector de mes -->
+            <Spinner
+                android:id="@+id/month_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Selector de año -->
+            <Spinner
+                android:id="@+id/year_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="20dp"
         android:background="@color/navbar"
         android:orientation="horizontal"
         android:gravity="bottom"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:layout_gravity="bottom">
 
         <ImageButton
             android:id="@+id/Inicio"
@@ -41,8 +194,7 @@
             android:background="@color/transparent"
             android:layout_weight="1"
             android:contentDescription="Catálogo"
-            android:src="@drawable/ic_catalogo"
-            android:onClick="onCatalogoClick" />
+            android:src="@drawable/ic_catalogo" />
 
         <ImageButton
             android:id="@+id/Ofertas"
@@ -72,10 +224,10 @@
             android:layout_weight="1"
             android:contentDescription="Perfil"
             android:src="@drawable/ic_perfil"
-            />
+            android:onClick="onPerfilClick" />
 
     </LinearLayout>
 
+
+
 </LinearLayout>
-
-

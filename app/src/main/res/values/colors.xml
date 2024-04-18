@@ -6,6 +6,8 @@
     <color name="rosa">#D9486B</color>
     <color name="navbar">#F5CFCF</color>
     <color name="transparent">#00FFFFFF</color>
-
+    <color name="verde">#008000</color>
+    <color name="red">#FF0000</color>
+    <color name="cielo">#87CEEB</color>
 
 </resources>
