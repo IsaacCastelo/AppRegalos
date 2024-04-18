@@ -15,9 +15,16 @@ class Login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         val btnIngresar: Button = findViewById(R.id.btn_ingresar)
+        val btnRegistrar: Button = findViewById(R.id.btn_registrar)
+
         btnIngresar.setOnClickListener {
             // Abre la pantalla de InicioTienda al hacer clic en el botón
             val intent = Intent(this@Login, InicioTienda::class.java)
+            startActivity(intent)
+        }
+
+        btnRegistrar.setOnClickListener {
+            val intent = Intent(this@Login, Registro::class.java)
             startActivity(intent)
         }
     }

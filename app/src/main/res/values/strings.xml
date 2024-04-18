@@ -9,4 +9,21 @@
     <string name="rebajas">Rebajas del día</string>
     <string name="pagar">Pagar</string>
     <string name="tipoPago">Elegir Metodo de pago</string>
+    <string name="pagoTarjeta">Pagar con tarjeta</string>
+    <string name="pagoLocal">Pagar en tienda</string>
+    <string name="titularTarjeta">Nombre titular de la tarjeta</string>
+    <string name="numTarjeta">Numero de la tarjeta</string>
+    <string name="fechaExp">Fecha de Expiracion</string>
+    <string name="confPago">Confirmar Pago</string>
+    <string name="CCV">CCV</string>
+    <string name="registro">Registro</string>
+    <string name="nombre">Nombre</string>
+    <string name="iniciarSesion">Iniciar Sesion</string>
+    <string name="email">E-mail"</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="telecelu">Telefono / Celular"</string>
+    <string name="registrar">Registrar</string>
 </resources>

@@ -19,7 +19,7 @@ class Carrito : AppCompatActivity() {
         val btnCatalogo = findViewById<ImageButton>(R.id.Catalogo)
         val btnOfertas = findViewById<ImageButton>(R.id.Ofertas)
         val btnPerfil = findViewById<ImageButton>(R.id.Perfil)
-        val btnInicioEntrar = findViewById<Button>(R.id.btn_inicioEntrar)
+        val btnTipoPago = findViewById<Button>(R.id.btn_inicioEntrar)
 
         btnInicio.setOnClickListener {
             // Abre la pantalla de inicio al hacer clic en el botón
@@ -46,7 +46,7 @@ class Carrito : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btnInicioEntrar.setOnClickListener {
+        btnTipoPago.setOnClickListener {
             // Abre la actividad de tipo pago al hacer clic en el botón
             val intent = Intent(this, TipoPago::class.java)
             startActivity(intent)

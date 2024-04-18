@@ -12,7 +12,24 @@
         android:background="@color/pastel"
         android:orientation="horizontal"
         tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="0dp"></LinearLayout>
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/tv_Registro"
+            android:layout_width="151dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="278dp"
+            android:layout_marginRight="278dp"
+            android:fontFamily="@font/jomhuria"
+            android:text="@string/iniciarSesion"
+            android:textColor="@color/rosa"
+            android:textSize="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView2"
@@ -24,25 +41,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/grupo1" />
 
-    <TextView
-        android:id="@+id/tv_Registro"
-        android:layout_width="56dp"
-        android:layout_height="26dp"
-        android:fontFamily="@font/jomhuria"
-        android:text="Iniciar Sesion"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.314" />
-
     <EditText
         android:id="@+id/et_email"
         android:layout_width="357dp"
         android:layout_height="49dp"
         android:fontFamily="@font/jomhuria"
-        android:hint="E-mail"
+        android:hint="@string/email"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,8 +58,9 @@
         android:id="@+id/btn_Google"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
         android:fontFamily="@font/jomhuria"
-        android:text="Google"
+        android:text="@string/google"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -67,8 +72,9 @@
         android:id="@+id/btn_FB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
         android:fontFamily="@font/jomhuria"
-        android:text="Facebook"
+        android:text="@string/facebook"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -81,7 +87,7 @@
         android:layout_width="357dp"
         android:layout_height="49dp"
         android:fontFamily="@font/jomhuria"
-        android:hint="Contraseña"
+        android:hint="@string/contrasenia"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,9 +104,25 @@
         android:background="@color/rosa"
         android:elevation="4dp"
         android:fontFamily="@font/jomhuria"
-        android:text="Ingresar"
-        android:textColor="#000000"
-        android:textColorLink="@color/white"
+        android:text="@string/ingresar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
+
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/rosa"
+        android:elevation="4dp"
+        android:fontFamily="@font/jomhuria"
+        android:text="@string/registro"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
