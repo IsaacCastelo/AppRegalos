@@ -29,7 +29,7 @@
         android:id="@+id/logoVisa"
         android:layout_width="match_parent"
         android:layout_height="46dp"
-        app:srcCompat="@drawable/logoVisa" />
+        app:srcCompat="@drawable/logovisa" />
 
     <Button
         android:id="@+id/btn_pagoTarjeta"
