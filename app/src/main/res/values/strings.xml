@@ -8,4 +8,5 @@
     <string name="ofertas">Ofertas del día</string>
     <string name="rebajas">Rebajas del día</string>
     <string name="pagar">Pagar</string>
+    <string name="tipoPago">Elegir Metodo de pago</string>
 </resources>
