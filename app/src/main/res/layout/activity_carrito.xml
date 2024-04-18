@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pastel"
+    android:orientation="vertical"
+    tools:context=".InicioTienda">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/jomhuria"
+            android:text="@string/carrito"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/rosa"/>
+
+        <ImageView
+            android:id="@+id/rebajasDiario"
+            android:layout_width="match_parent"
+            android:layout_height="499dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/pedidosbackground" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/jomhuria"
+        android:text="@string/total"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/rosa"/>
+
+    <Button
+        android:id="@+id/btn_inicioEntrar"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_button"
+        android:text="@string/pagar"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/navbar"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/Inicio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:layout_weight="1"
+            android:contentDescription="Inicio"
+            android:src="@drawable/ic_inicio"
+            android:onClick="onInicioClick" />
+
+        <ImageButton
+            android:id="@+id/Catalogo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:layout_weight="1"
+            android:contentDescription="Catálogo"
+            android:src="@drawable/ic_catalogo"
+            android:onClick="onCatalogoClick" />
+
+        <ImageButton
+            android:id="@+id/Ofertas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:layout_weight="1"
+            android:contentDescription="Ofertas"
+            android:src="@drawable/ic_ofertas"
+            android:onClick="onOfertasClick" />
+
+        <ImageButton
+            android:id="@+id/Carrito"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:layout_weight="1"
+            android:contentDescription="Carrito"
+            android:src="@drawable/ic_carrito" />
+
+        <ImageButton
+            android:id="@+id/Perfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:layout_weight="1"
+            android:contentDescription="Perfil"
+            android:src="@drawable/ic_perfil"
+            android:onClick="onPerfilClick" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

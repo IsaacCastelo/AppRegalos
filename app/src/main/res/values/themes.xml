@@ -3,6 +3,7 @@
     <style name="Base.Theme.ProyectoFinal_Regalos" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name ="colorPrimary">@color/rosa</item>
     </style>
 
     <style name="Theme.ProyectoFinal_Regalos" parent="Base.Theme.ProyectoFinal_Regalos" />

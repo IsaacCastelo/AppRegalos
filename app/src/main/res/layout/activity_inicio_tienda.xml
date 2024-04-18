@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pastel"
+    android:orientation="vertical"
+    tools:context=".InicioTienda">
+
+
+    <ImageView
+        android:id="@+id/logoHappyBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/grupo2" />
+
+    <TextView
+        android:id="@+id/bienvenido"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:fontFamily="@font/jomhuria"
+        android:text="@string/bienvenido"
+        android:textColor="@color/rosa"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/pedidos"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/jomhuria"
+        android:text="@string/pedidos"
+        android:textColor="@color/rosa"
+        android:textSize="48sp" />
+
+    <ImageView
+        android:id="@+id/pedidoBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pedidosbackground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@color/navbar"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/Inicio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="Inicio"
+            android:src="@drawable/ic_inicio" />
+
+        <ImageButton
+            android:id="@+id/Catalogo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="Catálogo"
+            android:onClick="onCatalogoClick"
+            android:src="@drawable/ic_catalogo" />
+
+        <ImageButton
+            android:id="@+id/Ofertas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="Ofertas"
+            android:onClick="onOfertasClick"
+            android:src="@drawable/ic_ofertas" />
+
+        <ImageButton
+            android:id="@+id/Carrito"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="Carrito"
+            android:onClick="onCarritoClick"
+            android:src="@drawable/ic_carrito" />
+
+        <ImageButton
+            android:id="@+id/Perfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="Perfil"
+            android:onClick="onPerfilClick"
+            android:src="@drawable/ic_perfil" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

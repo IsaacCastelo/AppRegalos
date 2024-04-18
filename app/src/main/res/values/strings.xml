@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ProyectoFinal_Regalos</string>
+    <string name="inicioentrar">Entrar</string>
+    <string name="bienvenido">Bienvenido, @Username</string>
+    <string name="pedidos">Pedidos</string>
+    <string name="carrito">Carrito</string>
+    <string name="total">Total:</string>
+    <string name="ofertas">Ofertas del día</string>
+    <string name="rebajas">Rebajas del día</string>
+    <string name="pagar">Pagar</string>
 </resources>

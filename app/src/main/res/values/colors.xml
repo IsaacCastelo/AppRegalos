@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="pastel">#F3E0B3</color>
     <color name="rosa">#D9486B</color>
+    <color name="navbar">#F5CFCF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+
 </resources>

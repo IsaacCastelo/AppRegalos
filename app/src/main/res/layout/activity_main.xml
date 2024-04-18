@@ -15,16 +15,34 @@
         android:background="@color/pastel"
         android:orientation="horizontal"
         tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="0dp"></LinearLayout>
+        tools:layout_editor_absoluteY="0dp">
+
+    </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/logoHappyBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintBottom_toTopOf="@+id/btn_inicioEntrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/happybox" />
+
+    <Button
+        android:id="@+id/btn_inicioEntrar"
+        android:layout_width="282dp"
+        android:layout_height="49dp"
+        android:background="@drawable/round_button"
+        android:text="@string/inicioentrar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoHappyBox" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

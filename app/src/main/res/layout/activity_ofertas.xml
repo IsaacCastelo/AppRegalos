@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pastel"
+    android:orientation="vertical"
+    tools:context=".InicioTienda">
+
+    <!-- ImageView con texto "Ofertas del día" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/jomhuria"
+            android:text="@string/ofertas"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/rosa"/>
+
+        <ImageView
+            android:id="@+id/ofertasDiario"
+            android:layout_width="match_parent"
+            android:layout_height="295dp"
+            app:srcCompat="@drawable/pedidosbackground" />
+
+    </LinearLayout>
+
+    <!-- ImageView con texto "Rebajas del día" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/jomhuria"
+            android:text="@string/rebajas"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/rosa"/>
+
+        <ImageView
+            android:id="@+id/rebajasDiario"
+            android:layout_width="match_parent"
+            android:layout_height="293dp"
+            app:srcCompat="@drawable/pedidosbackground" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/navbar"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/Inicio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:layout_weight="1"
+            android:contentDescription="Inicio"
+            android:src="@drawable/ic_inicio"
+            android:onClick="onInicioClick" />
+
+        <ImageButton
+            android:id="@+id/Catalogo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:layout_weight="1"
+            android:contentDescription="Catálogo"
+            android:src="@drawable/ic_catalogo"
+            android:onClick="onCatalogoClick" />
+
+        <ImageButton
+            android:id="@+id/Ofertas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:layout_weight="1"
+            android:contentDescription="Ofertas"
+            android:src="@drawable/ic_ofertas" />
+
+        <ImageButton
+            android:id="@+id/Carrito"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:layout_weight="1"
+            android:contentDescription="Carrito"
+            android:src="@drawable/ic_carrito"
+            android:onClick="onCarritoClick" />
+
+        <ImageButton
+            android:id="@+id/Perfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:layout_weight="1"
+            android:contentDescription="Perfil"
+            android:src="@drawable/ic_perfil"
+            android:onClick="onPerfilClick" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
