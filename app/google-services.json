@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "51639103521",
+    "project_id": "proyecto-final---app-regalos",
+    "storage_bucket": "proyecto-final---app-regalos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51639103521:android:ec73ab8e759d2c9383f360",
+        "android_client_info": {
+          "package_name": "mx.edu.itson.proyectofinal_regalos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd4H2tLILKJ50AhzwNvrc8ts4d_E_yZOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
