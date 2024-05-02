@@ -1,297 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pastel"
-    android:orientation="vertical"
     tools:context=".InicioTienda">
 
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:gravity="center">
-
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="343dp"
-            android:layout_height="89dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/perfilletra" />
-
-    </LinearLayout>
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ActInfo"
-        android:textColor="@android:color/white"
-        android:gravity="center"
-        android:layout_gravity="end"
-        android:layout_marginEnd="16dp"
-        android:fontFamily="@font/jomhuria"
-        android:textSize="30sp"/>
-
-    <!-- Imagen con nombre "avatars" a la izquierda del texto "Nombre Completo" -->
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="16dp"
-        android:gravity="center_vertical">
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="123dp"
-            android:layout_height="124dp"
-            android:layout_marginEnd="8dp"
-            app:srcCompat="@drawable/perfil" />
-
-        <TextView
-            android:id="@+id/myTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Username"
-            android:textSize="50sp"
-            android:textColor="@color/rosa"
-            android:shadowDx="5"
-            android:shadowDy="5"
-            android:shadowRadius="11"
-            android:shadowColor="@color/black"
-            android:outlineSpotShadowColor="@android:color/white"
-            android:fontFamily="@font/jomhuria" />
-
-
-    </LinearLayout>
-
-    <!-- Vista verde que ocupa todo el ancho de la página -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/white"
-        android:gravity="center">
-
-        <!-- ImageView a la izquierda -->
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/dinero"
-            android:layout_marginEnd="8dp"/>
-
-
-        <!-- TextView centrado -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/infoPago"
-            android:textColor="@color/rosa"
-            android:textSize="34sp"
-            android:fontFamily="@font/jomhuria"
-            android:layout_gravity="center" />
-
-        <!-- ImageView a la derecha -->
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/dinero"
-            android:layout_marginStart="8dp" />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/white"
-        android:layout_marginTop="16dp">
-
-        <!-- Texto "Método de pago" -->
-
-        <!-- Opciones de pago -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Método de pago"
-            android:textColor="@android:color/black"
-            android:textSize="30sp"
-            android:shadowDx="1"
-            android:shadowDy="5"
-            android:shadowRadius="10"
-            android:shadowColor="@color/gris"
-            android:outlineSpotShadowColor="@android:color/white"
-            android:fontFamily="@font/jomhuria" />
-
-        <Spinner
-            android:id="@+id/payment_methods_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"/>
-
-        <!-- Texto "Digitos de la tarjeta" -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Digitos de la tarjeta"
-            android:textColor="@android:color/black"
-            android:textSize="30sp"
-            android:shadowDx="1"
-            android:shadowDy="5"
-            android:shadowRadius="10"
-            android:shadowColor="@color/gris"
-            android:outlineSpotShadowColor="@android:color/white"
-            android:fontFamily="@font/jomhuria" />
-
-        <!-- Espacio para ingresar los dígitos de la tarjeta -->
-        <EditText
-            android:id="@+id/card_number_editText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:hint="Ingrese los dígitos de la tarjeta"
-            android:layout_marginTop="8dp"/>
-
-        <!-- Texto "Fecha de vencimiento" -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fecha de vencimiento"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"
-            android:layout_marginTop="16dp"/>
-
-        <!-- Layout horizontal para mes y año -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="8dp">
+            android:layout_height="120dp"
+            android:gravity="center">
 
-            <!-- Etiqueta de texto para el mes -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center_horizontal">
-
-                <TextView
-                    android:layout_width="38dp"
-                    android:layout_height="41dp"
-                    android:text="MM"
-                    android:textSize="40sp"
-                    android:textColor="@color/grisObscuro"
-                    android:fontFamily="@font/jomhuria"/>
-
-                <Spinner
-                    android:id="@+id/month_spinner"
-                    android:layout_width="75dp"
-                    android:layout_height="30dp"
-                    android:background="@color/cafeCrema"
-                    android:layout_marginTop="8dp"/>
-            </LinearLayout>
-
-            <!-- Etiqueta de texto para el año -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center_horizontal"
-                android:layout_marginStart="16dp">
-
-                <TextView
-                    android:layout_width="26dp"
-                    android:layout_height="41dp"
-                    android:fontFamily="@font/jomhuria"
-                    android:text="AA"
-                    android:textColor="@color/grisObscuro"
-                    android:textSize="40sp" />
-
-                <Spinner
-                    android:id="@+id/year_spinner"
-                    android:layout_width="75dp"
-                    android:layout_height="30dp"
-                    android:background="@color/cafeCrema"
-                    android:layout_marginTop="8dp"/>
-            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="343dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/perfilletra" />
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="123dp"
+                android:layout_height="124dp"
+                android:layout_marginEnd="8dp"
+                app:srcCompat="@drawable/perfil" />
+
+            <TextView
+                android:id="@+id/usernameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jomhuria"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:shadowColor="@color/black"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="11"
+                android:text="Username"
+                android:textColor="@color/rosa"
+                android:textSize="50sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/jomhuria"
+                android:text="@string/infoPago"
+                android:textColor="@color/rosa"
+                android:textSize="34sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:orientation="vertical">
 
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jomhuria"
+                android:shadowColor="@color/gris"
+                android:shadowRadius="10"
+                android:text="Nombre"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
 
+            <TextView
+                android:id="@+id/nombreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jomhuria"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:shadowColor="@color/gris"
+                android:shadowDx="1"
+                android:shadowDy="5"
+                android:shadowRadius="10"
+                android:text="Telefono"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/telefonoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jomhuria"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:shadowColor="@color/gris"
+                android:shadowDx="1"
+                android:shadowDy="5"
+                android:shadowRadius="10"
+                android:text="E-Mail"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/correoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jomhuria"
+                android:outlineSpotShadowColor="@android:color/white"
+                android:shadowColor="@color/gris"
+                android:shadowDx="1"
+                android:shadowDy="5"
+                android:shadowRadius="10"
+                android:text="Contraseña"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*********"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnActualizarInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/jomhuria"
+            android:gravity="center"
+            android:text="@string/ActInfo"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/navbar"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/Inicio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:layout_weight="1"
+                android:contentDescription="Inicio"
+                android:src="@drawable/ic_inicio"
+                android:onClick="onInicioClick" />
+
+            <ImageButton
+                android:id="@+id/Catalogo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:layout_weight="1"
+                android:contentDescription="Catálogo"
+                android:src="@drawable/ic_catalogo" />
+
+            <ImageButton
+                android:id="@+id/Ofertas"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:layout_weight="1"
+                android:contentDescription="Ofertas"
+                android:src="@drawable/ic_ofertas"
+                android:onClick="onOfertasClick" />
+
+            <ImageButton
+                android:id="@+id/Carrito"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:layout_weight="1"
+                android:contentDescription="Carrito"
+                android:src="@drawable/ic_carrito"
+                android:onClick="onCarritoClick" />
+
+            <ImageButton
+                android:id="@+id/Perfil"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:layout_weight="1"
+                android:contentDescription="Perfil"
+                android:src="@drawable/ic_perfil"
+                android:onClick="onPerfilClick" />
+
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_gravity="bottom"
-        android:layout_marginTop="90dp"
-        android:background="@color/navbar"
-        android:gravity="bottom"
-        android:orientation="horizontal"
-        android:padding="8dp">
-
-        <ImageButton
-            android:id="@+id/Inicio"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/transparent"
-            android:contentDescription="Inicio"
-            android:onClick="onInicioClick"
-            android:src="@drawable/ic_inicio" />
-
-        <ImageButton
-            android:id="@+id/Catalogo"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/transparent"
-            android:contentDescription="Catálogo"
-            android:src="@drawable/ic_catalogo" />
-
-        <ImageButton
-            android:id="@+id/Ofertas"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/transparent"
-            android:contentDescription="Ofertas"
-            android:onClick="onOfertasClick"
-            android:src="@drawable/ic_ofertas" />
-
-        <ImageButton
-            android:id="@+id/Carrito"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/transparent"
-            android:contentDescription="Carrito"
-            android:onClick="onCarritoClick"
-            android:src="@drawable/ic_carrito" />
-
-        <ImageButton
-            android:id="@+id/Perfil"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/transparent"
-            android:contentDescription="Perfil"
-            android:onClick="onPerfilClick"
-            android:src="@drawable/ic_perfil" />
-
-    </LinearLayout>
-
-
-</LinearLayout>
 </ScrollView>

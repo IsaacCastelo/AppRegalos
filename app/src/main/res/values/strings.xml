@@ -26,6 +26,6 @@
     <string name="google">Google</string>
     <string name="telecelu">Telefono / Celular"</string>
     <string name="registrar">Registrar</string>
-    <string name="infoPago">Información de Pago</string>
+    <string name="infoPago">Información del Usuario</string>
     <string name="ActInfo">Actualizar Información</string>
 </resources>
