@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class Catalogo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,23 +20,21 @@ class Catalogo : AppCompatActivity() {
         var btnTazas = findViewById<ImageButton>(R.id.tazasBtn)
 
         btnDetalles.setOnClickListener {
-            mostrarProductos(btnDetalles.tag.toString())
+            val intent : Intent = Intent(this,
+                Detalles::class.java)
+            startActivity(intent)
         }
 
         btnGlobos.setOnClickListener {
-            mostrarProductos(btnGlobos.tag.toString())
         }
 
         btnRegalos.setOnClickListener {
-            mostrarProductos(btnRegalos.tag.toString())
         }
 
         btnPeluches.setOnClickListener {
-            mostrarProductos(btnPeluches.tag.toString())
         }
 
         btnTazas.setOnClickListener {
-            mostrarProductos(btnTazas.tag.toString())
         }
 
         // MOSTRAR PESTAÑAS ADICIONALES
@@ -70,12 +66,5 @@ class Catalogo : AppCompatActivity() {
             val intent = Intent(this, Perfil::class.java)
             startActivity(intent)
         }
-    }
-
-    private fun mostrarProductos(categoria: String) {
-        var intent: Intent = Intent(this,
-            Producto::class.java)
-        intent.putExtra("categoria", categoria)
-        startActivity(intent)
     }
 }
