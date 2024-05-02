@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:background="@color/pastel">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/azulCielo"
+            android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="343dp"
+                    android:layout_height="89dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/informaciontexto" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/perfil"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botón para subir foto -->
+        <Button
+            android:id="@+id/upload_photo_button"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:text="Subir Foto"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/black"
+            android:layout_marginBottom="16dp"
+            android:textSize="35sp"
+            android:shadowDx="1"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:shadowColor="@color/gris"
+            android:outlineSpotShadowColor="@android:color/white"
+            android:fontFamily="@font/jomhuria" />
+
+        <!-- Campo de texto para el nombre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="35sp"
+            android:textColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:shadowColor="@color/gris"
+            android:outlineSpotShadowColor="@android:color/white"
+            android:fontFamily="@font/jomhuria" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">>
+                <EditText
+                    android:id="@+id/name_edittext"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre"
+                    android:inputType="text"/>
+                <TextView
+                    android:id="@+id/edit_name_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Editar"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="5"
+                    android:shadowRadius="10"
+                    android:shadowColor="@color/gris"
+                    android:outlineSpotShadowColor="@android:color/white"
+                    android:fontFamily="@font/jomhuria"
+                    android:layout_gravity="end"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="35sp"
+            android:textColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:shadowColor="@color/gris"
+            android:outlineSpotShadowColor="@android:color/white"
+            android:fontFamily="@font/jomhuria" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/email_edittext"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"/>
+
+                <!-- Botón para editar el email -->
+                <TextView
+                    android:id="@+id/edit_email_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Editar"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="5"
+                    android:shadowRadius="10"
+                    android:shadowColor="@color/gris"
+                    android:outlineSpotShadowColor="@android:color/white"
+                    android:fontFamily="@font/jomhuria"
+                    android:layout_gravity="end"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teléfono"
+            android:textSize="35sp"
+            android:textColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:shadowColor="@color/gris"
+            android:outlineSpotShadowColor="@android:color/white"
+            android:fontFamily="@font/jomhuria" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">>
+
+                <EditText
+                    android:id="@+id/phone_edittext"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Teléfono"
+                    android:inputType="phone"/>
+
+                <!-- Botón para editar el teléfono -->
+                <TextView
+                    android:id="@+id/edit_phone_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Editar"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="5"
+                    android:shadowRadius="10"
+                    android:shadowColor="@color/gris"
+                    android:outlineSpotShadowColor="@android:color/white"
+                    android:fontFamily="@font/jomhuria"
+                    android:layout_gravity="end"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textSize="35sp"
+            android:textColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:shadowColor="@color/gris"
+            android:outlineSpotShadowColor="@android:color/white"
+            android:fontFamily="@font/jomhuria" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/password_edittext"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"/>
+
+                <!-- Botón para editar la contraseña -->
+                <TextView
+                    android:id="@+id/edit_password_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Editar"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="5"
+                    android:shadowRadius="10"
+                    android:shadowColor="@color/gris"
+                    android:outlineSpotShadowColor="@android:color/white"
+                    android:fontFamily="@font/jomhuria"
+                    android:layout_gravity="end"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="173dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="90dp"
+            android:background="@color/navbar"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/Inicio"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:contentDescription="Inicio"
+                    android:onClick="onInicioClick"
+                    android:src="@drawable/ic_inicio" />
+
+                <ImageButton
+                    android:id="@+id/Catalogo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:contentDescription="Catálogo"
+                    android:src="@drawable/ic_catalogo" />
+
+                <ImageButton
+                    android:id="@+id/Ofertas"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:contentDescription="Ofertas"
+                    android:onClick="onOfertasClick"
+                    android:src="@drawable/ic_ofertas" />
+
+                <ImageButton
+                    android:id="@+id/Carrito"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:contentDescription="Carrito"
+                    android:onClick="onCarritoClick"
+                    android:src="@drawable/ic_carrito" />
+
+                <ImageButton
+                    android:id="@+id/Perfil"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:contentDescription="Perfil"
+                    android:onClick="onPerfilClick"
+                    android:src="@drawable/ic_perfil" />
+
+        </LinearLayout>
+</LinearLayout>
+</ScrollView>

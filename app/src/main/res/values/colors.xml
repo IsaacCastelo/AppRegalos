@@ -6,8 +6,17 @@
     <color name="rosa">#D9486B</color>
     <color name="navbar">#F5CFCF</color>
     <color name="transparent">#00FFFFFF</color>
-    <color name="verde">#008000</color>
+    <color name="verde">#71C254</color>
     <color name="red">#FF0000</color>
     <color name="cielo">#87CEEB</color>
+    <color name="azul">#0000FF</color>
+    <color name="amarillo">#FFFF00</color>
+    <color name="naranja">#FFA500</color>
+    <color name="morado">#800080</color>
+    <color name="gris">#808080</color>
+    <color name="azulCielo">#6CB0BF</color>
+    <color name="cafeCrema">#BF9C9C</color>
+    <color name="grisObscuro">#545252</color>
+
 
 </resources>
