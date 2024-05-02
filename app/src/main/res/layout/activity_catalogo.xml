@@ -26,6 +26,7 @@
             android:useDefaultMargins="true">
 
             <ImageButton
+                android:id="@+id/detallesBtn"
                 android:layout_width="143dp"
                 android:layout_height="189dp"
                 android:layout_row="0"
@@ -35,6 +36,7 @@
                 android:src="@drawable/detallesbtn" />
 
             <ImageButton
+                android:id="@+id/globosBtn"
                 android:layout_width="146dp"
                 android:layout_height="184dp"
                 android:layout_row="0"
@@ -44,6 +46,7 @@
                 android:src="@drawable/globosbtn" />
 
             <ImageButton
+                android:id="@+id/peluchesBtn"
                 android:layout_width="138dp"
                 android:layout_height="169dp"
                 android:layout_row="1"
@@ -53,6 +56,7 @@
                 android:src="@drawable/peluchesbtn" />
 
             <ImageButton
+                android:id="@+id/regalosBtn"
                 android:layout_width="144dp"
                 android:layout_height="175dp"
                 android:layout_row="1"
@@ -62,6 +66,7 @@
                 android:src="@drawable/regalosbtn" />
 
             <ImageButton
+                android:id="@+id/tazasBtn"
                 android:layout_width="131dp"
                 android:layout_height="195dp"
                 android:layout_row="2"

@@ -14,6 +14,49 @@ class Catalogo : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_catalogo)
 
+        // MOSTRAR PRODUCTOS DEL CATÁLOGO
+        var btnDetalles = findViewById<ImageButton>(R.id.detallesBtn)
+        var btnGlobos = findViewById<ImageButton>(R.id.globosBtn)
+        var btnRegalos = findViewById<ImageButton>(R.id.regalosBtn)
+        var btnPeluches = findViewById<ImageButton>(R.id.peluchesBtn)
+        var btnTazas = findViewById<ImageButton>(R.id.tazasBtn)
+
+        btnDetalles.setOnClickListener {
+            var intent: Intent = Intent(this,
+                Productos::class.java)
+            intent.putExtra("categoria", "detalles")
+            startActivity(intent)
+        }
+
+        btnGlobos.setOnClickListener {
+            var intent: Intent = Intent(this,
+                Productos::class.java)
+            intent.putExtra("categoria", "globos")
+            startActivity(intent)
+        }
+
+        btnRegalos.setOnClickListener {
+            var intent: Intent = Intent(this,
+                Productos::class.java)
+            intent.putExtra("categoria", "regalos")
+            startActivity(intent)
+        }
+
+        btnPeluches.setOnClickListener {
+            var intent: Intent = Intent(this,
+                Productos::class.java)
+            intent.putExtra("categoria", "peluches")
+            startActivity(intent)
+        }
+
+        btnTazas.setOnClickListener {
+            var intent: Intent = Intent(this,
+                Productos::class.java)
+            intent.putExtra("categoria", "tazas")
+            startActivity(intent)
+        }
+
+        // MOSTRAR PESTAÑAS ADICIONALES
         val btnInicio = findViewById<ImageButton>(R.id.Inicio)
         val btnOfertas = findViewById<ImageButton>(R.id.Ofertas)
         val btnCarrito = findViewById<ImageButton>(R.id.Carrito)
