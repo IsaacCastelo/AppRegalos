@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ProyectoFinal_Regalos</string>
     <string name="inicioentrar">Entrar</string>
-    <string name="bienvenido">Bienvenido, @Username</string>
+    <string name="bienvenido">Bienvenido</string>
     <string name="pedidos">Pedidos</string>
     <string name="carrito">Carrito</string>
     <string name="total">Total:</string>
