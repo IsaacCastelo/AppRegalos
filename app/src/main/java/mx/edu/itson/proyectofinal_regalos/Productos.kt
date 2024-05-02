@@ -36,11 +36,6 @@ class Productos : AppCompatActivity() {
         }
     }
 
-    private fun cargarCatalogo() {
-        val intent = Intent(this, Catalogo::class.java)
-        startActivity(intent)
-    }
-
     private fun cargarDetalles() {
         detalles.add(Prod(R.drawable.cumplebotanas, "$180"))
         detalles.add(Prod(R.drawable.cumplecheve, "$200"))
