@@ -32,4 +32,68 @@
         android:numColumns="3"
         android:paddingHorizontal="6dp" />
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="-24dp"
+        android:background="@color/navbar"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/Inicio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="Inicio"
+            android:onClick="onInicioClick"
+            android:src="@drawable/ic_inicio" />
+
+        <ImageButton
+            android:id="@+id/Catalogo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="Catálogo"
+            android:src="@drawable/ic_catalogo" />
+
+        <ImageButton
+            android:id="@+id/Ofertas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="Ofertas"
+            android:onClick="onOfertasClick"
+            android:src="@drawable/ic_ofertas" />
+
+        <ImageButton
+            android:id="@+id/Carrito"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="Carrito"
+            android:onClick="onCarritoClick"
+            android:src="@drawable/ic_carrito" />
+
+        <ImageButton
+            android:id="@+id/Perfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="Perfil"
+            android:onClick="onPerfilClick"
+            android:src="@drawable/ic_perfil" />
+
+
+    </LinearLayout>
+
+
 </LinearLayout>

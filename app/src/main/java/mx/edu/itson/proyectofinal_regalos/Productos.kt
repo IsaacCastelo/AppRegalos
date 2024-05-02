@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.GridView
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -29,6 +30,41 @@ class Productos : AppCompatActivity() {
 
         val categoria = intent.getStringExtra("categoria")
         obtenerProductosPorCategoria(categoria)
+
+        val btnInicio = findViewById<ImageButton>(R.id.Inicio)
+        val btnCatalogo = findViewById<ImageButton>(R.id.Catalogo)
+        val btnOfertas = findViewById<ImageButton>(R.id.Ofertas)
+        val btnCarrito = findViewById<ImageButton>(R.id.Carrito)
+        val btnPerfil = findViewById<ImageButton>(R.id.Perfil)
+
+        btnInicio.setOnClickListener {
+            // Abre la pantalla de inicio al hacer clic en el botón
+            val intent = Intent(this, InicioTienda::class.java)
+            startActivity(intent)
+        }
+
+        btnCatalogo.setOnClickListener {
+            // Abre la pantalla de catálogo al hacer clic en el botón
+            val intent = Intent(this, Catalogo::class.java)
+            startActivity(intent)
+        }
+
+        btnOfertas.setOnClickListener {
+            // Abre la pantalla de ofertas al hacer clic en el botón
+            val intent = Intent(this, Ofertas::class.java)
+            startActivity(intent)
+        }
+
+        btnCarrito.setOnClickListener {
+            // Abre la pantalla de carrito al hacer clic en el botón
+            val intent = Intent(this, Carrito::class.java)
+            startActivity(intent)
+        }
+
+        btnPerfil.setOnClickListener{
+            val intent = Intent(this, Perfil::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun obtenerProductosPorCategoria(categoria: String?) : Unit {
