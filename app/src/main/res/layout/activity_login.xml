@@ -61,7 +61,7 @@
         android:layout_height="49dp"
         android:fontFamily="@font/jomhuria"
         android:hint="@string/contrasenia"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

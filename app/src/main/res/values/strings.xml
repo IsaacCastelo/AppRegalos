@@ -27,4 +27,5 @@
     <string name="telecelu">Telefono / Celular"</string>
     <string name="registrar">Registrar</string>
     <string name="infoPago">Información de Pago</string>
+    <string name="ActInfo">Actualizar Información</string>
 </resources>

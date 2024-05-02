@@ -17,7 +17,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class Detalles : AppCompatActivity() {
-    val titulo = findViewById<TextView>(R.id.titulo)
     var productosAdapter: ProductoAdapter? = null
     var detalles = ArrayList<Prod>()
 
@@ -25,6 +24,8 @@ class Detalles : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_detalles)
+        val titulo = findViewById<TextView>(R.id.titulo)
+
 
         cargarDetalles()
 

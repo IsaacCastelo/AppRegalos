@@ -20,8 +20,7 @@ class Catalogo : AppCompatActivity() {
         var btnTazas = findViewById<ImageButton>(R.id.tazasBtn)
 
         btnDetalles.setOnClickListener {
-            val intent : Intent = Intent(this,
-                Detalles::class.java)
+            val intent : Intent = Intent(this, Detalles::class.java)
             startActivity(intent)
         }
 
