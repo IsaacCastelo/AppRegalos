@@ -22,38 +22,23 @@ class Catalogo : AppCompatActivity() {
         var btnTazas = findViewById<ImageButton>(R.id.tazasBtn)
 
         btnDetalles.setOnClickListener {
-            var intent: Intent = Intent(this,
-                Productos::class.java)
-            intent.putExtra("categoria", "detalles")
-            startActivity(intent)
+            mostrarProductos(btnDetalles.tag.toString())
         }
 
         btnGlobos.setOnClickListener {
-            var intent: Intent = Intent(this,
-                Productos::class.java)
-            intent.putExtra("categoria", "globos")
-            startActivity(intent)
+            mostrarProductos(btnGlobos.tag.toString())
         }
 
         btnRegalos.setOnClickListener {
-            var intent: Intent = Intent(this,
-                Productos::class.java)
-            intent.putExtra("categoria", "regalos")
-            startActivity(intent)
+            mostrarProductos(btnRegalos.tag.toString())
         }
 
         btnPeluches.setOnClickListener {
-            var intent: Intent = Intent(this,
-                Productos::class.java)
-            intent.putExtra("categoria", "peluches")
-            startActivity(intent)
+            mostrarProductos(btnPeluches.tag.toString())
         }
 
         btnTazas.setOnClickListener {
-            var intent: Intent = Intent(this,
-                Productos::class.java)
-            intent.putExtra("categoria", "tazas")
-            startActivity(intent)
+            mostrarProductos(btnTazas.tag.toString())
         }
 
         // MOSTRAR PESTAÑAS ADICIONALES
@@ -85,5 +70,12 @@ class Catalogo : AppCompatActivity() {
             val intent = Intent(this, Perfil::class.java)
             startActivity(intent)
         }
+    }
+
+    private fun mostrarProductos(categoria: String) {
+        var intent: Intent = Intent(this,
+            Producto::class.java)
+        intent.putExtra("categoria", categoria)
+        startActivity(intent)
     }
 }

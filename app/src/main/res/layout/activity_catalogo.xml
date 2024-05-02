@@ -33,7 +33,8 @@
                 android:layout_column="0"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/detallesbtn" />
+                android:src="@drawable/detallesbtn"
+                android:tag="detalles" />
 
             <ImageButton
                 android:id="@+id/globosBtn"
@@ -43,7 +44,8 @@
                 android:layout_column="1"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/globosbtn" />
+                android:src="@drawable/globosbtn"
+                android:tag="globos"/>
 
             <ImageButton
                 android:id="@+id/peluchesBtn"
@@ -53,7 +55,8 @@
                 android:layout_column="0"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/peluchesbtn" />
+                android:src="@drawable/peluchesbtn"
+                android:tag="peluches"/>
 
             <ImageButton
                 android:id="@+id/regalosBtn"
@@ -63,7 +66,8 @@
                 android:layout_column="1"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/regalosbtn" />
+                android:src="@drawable/regalosbtn"
+                android:tag="regalos" />
 
             <ImageButton
                 android:id="@+id/tazasBtn"
@@ -74,7 +78,8 @@
                 android:layout_columnSpan="2"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/tazabtn" />
+                android:src="@drawable/tazabtn"
+                android:tag="tazas" />
 
         </GridLayout>
 
