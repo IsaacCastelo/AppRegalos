@@ -17,6 +17,10 @@ import androidx.core.view.WindowInsetsCompat
 
 class Producto : AppCompatActivity() {
     val titulo = findViewById<TextView>(R.id.titulo)
+    var gridProductos = findViewById<GridView>(R.id.gridProductos)
+    var productosAdapter: ProductoAdapter? = null
+
+    //LISTAS DE LOS PRODUCTOS
     var detalles = ArrayList<Prod>()
     var globos = ArrayList<Prod>()
     var peluches = ArrayList<Prod>()
@@ -33,7 +37,6 @@ class Producto : AppCompatActivity() {
             insets
         }
 
-        var gridProductos = findViewById<GridView>(R.id.gridProductos)
         val categoria = intent.getStringExtra("categoria")
         obtenerProductosPorCategoria(categoria)
     }
@@ -41,6 +44,8 @@ class Producto : AppCompatActivity() {
     private fun obtenerProductosPorCategoria(categoria: String?): Unit {
         return when(categoria) {
             "detalles" -> {
+                productosAdapter = ProductoAdapter(this, detalles)
+                gridProductos.adapter = productosAdapter
                 cargarDetalles()
                 titulo.setText("Detalles")
             }
@@ -61,18 +66,9 @@ class Producto : AppCompatActivity() {
         detalles.add(Prod(R.drawable.cumplevinos, "$280"))
     }
 
-    class ProductoAdapter: BaseAdapter {
-        var productos = ArrayList<Prod>()
-        var context: Context? = null
-
-        constructor(
-            context: Context,
-            productos: ArrayList<Prod>
-        ) : super() {
-            this.productos = productos
-            this.context = context
-        }
-
+    class ProductoAdapter(private val context: Context,
+                          private val productos: ArrayList<Prod>)
+        : BaseAdapter() {
         override fun getCount(): Int {
             return productos.size
         }
@@ -89,7 +85,7 @@ class Producto : AppCompatActivity() {
                              convertView: View?,
                              parent: ViewGroup?): View {
             var producto = productos[pos]
-            var inflator = context!!.getSystemService(
+            var inflator = context.getSystemService(
                 Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             var vista = inflator.inflate(R.layout.activity_detalles_productos, null)
             var image: ImageView = vista.findViewById(R.id.image_detalles_cell)
@@ -102,7 +98,7 @@ class Producto : AppCompatActivity() {
                 val intento = Intent(context, DetallesProductos::class.java)
                 intento.putExtra("imagen", producto.imagen)
                 intento.putExtra("precio", producto.precio)
-                context!!.startActivity(intento)
+                context.startActivity(intento)
             }
 
             return vista
