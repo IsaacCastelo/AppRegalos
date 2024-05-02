@@ -22,7 +22,7 @@
             android:name=".DetalleProducto"
             android:exported="false" />
         <activity
-            android:name=".Detalles"
+            android:name=".Productos"
             android:exported="false" />
         <activity
             android:name=".producto"

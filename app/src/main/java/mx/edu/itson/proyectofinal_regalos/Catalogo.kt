@@ -20,20 +20,23 @@ class Catalogo : AppCompatActivity() {
         var btnTazas = findViewById<ImageButton>(R.id.tazasBtn)
 
         btnDetalles.setOnClickListener {
-            val intent : Intent = Intent(this, Detalles::class.java)
-            startActivity(intent)
+            mostrarProductos(btnDetalles.tag.toString())
         }
 
         btnGlobos.setOnClickListener {
+            mostrarProductos(btnGlobos.tag.toString())
         }
 
         btnRegalos.setOnClickListener {
+            mostrarProductos(btnRegalos.tag.toString())
         }
 
         btnPeluches.setOnClickListener {
+            mostrarProductos(btnPeluches.tag.toString())
         }
 
         btnTazas.setOnClickListener {
+            mostrarProductos(btnTazas.tag.toString())
         }
 
         // MOSTRAR PESTAÑAS ADICIONALES
@@ -65,5 +68,11 @@ class Catalogo : AppCompatActivity() {
             val intent = Intent(this, Perfil::class.java)
             startActivity(intent)
         }
+    }
+
+    private fun mostrarProductos(categoria: String) {
+        val intent = Intent(this, Productos::class.java)
+        intent.putExtra("categoria", categoria)
+        startActivity(intent)
     }
 }

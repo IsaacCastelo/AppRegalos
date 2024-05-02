@@ -4,7 +4,8 @@
     android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    tools:context=".Detalles">
+    android:background="@color/pastel"
+    tools:context=".Productos">
 
     <TextView
         android:id="@+id/titulo"
@@ -20,12 +21,13 @@
         android:layout_width="375dp"
         android:layout_height="2dp"
         android:layout_marginHorizontal="15dp"
-        android:layout_marginTop="11dp" />
+        android:layout_marginTop="11dp"
+        android:background="@color/black" />
 
     <GridView
         android:id="@+id/gridProductos"
         android:layout_width="wrap_content"
-        android:layout_height="327dp"
+        android:layout_height="655dp"
         android:layout_marginTop="18dp"
         android:numColumns="3"
         android:paddingHorizontal="6dp" />
