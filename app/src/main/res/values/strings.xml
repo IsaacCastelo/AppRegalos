@@ -5,8 +5,7 @@
     <string name="pedidos">Pedidos</string>
     <string name="carrito">Carrito</string>
     <string name="total">Total:</string>
-    <string name="ofertas">Ofertas del día</string>
-    <string name="rebajas">Rebajas del día</string>
+    <string name="ofertas">Promociones del dia</string>
     <string name="pagar">Pagar</string>
     <string name="tipoPago">Elegir Metodo de pago</string>
     <string name="pagoTarjeta">Pagar con tarjeta</string>
@@ -28,4 +27,6 @@
     <string name="registrar">Registrar</string>
     <string name="infoPago">Información del Usuario</string>
     <string name="ActInfo">Actualizar Información</string>
+    <string name="VolverInicio">Volver al Inicio</string>
+    <string name="PagoProcesado">Pago Procesado!</string>
 </resources>

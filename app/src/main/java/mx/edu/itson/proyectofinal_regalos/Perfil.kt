@@ -27,6 +27,7 @@ class Perfil : AppCompatActivity() {
         val btnOfertas = findViewById<ImageButton>(R.id.Ofertas)
         val btnCarrito = findViewById<ImageButton>(R.id.Carrito)
         val btnActInfo = findViewById<Button>(R.id.btnActualizarInfo)
+        val Perfil = findViewById<ImageButton>(R.id.Perfil)
 
         btnInicio.setOnClickListener {
             // Abre la pantalla de inicio al hacer clic en el botón
@@ -54,6 +55,16 @@ class Perfil : AppCompatActivity() {
 
         btnActInfo.setOnClickListener{
             val intent = Intent(this, EditarPerfil::class.java)
+            startActivity(intent)
+        }
+
+        btnActInfo.setOnClickListener{
+            val intent = Intent(this, EditarPerfil::class.java)
+            startActivity(intent)
+        }
+
+        Perfil.setOnClickListener{
+            val intent = Intent(this, Perfil::class.java)
             startActivity(intent)
         }
 

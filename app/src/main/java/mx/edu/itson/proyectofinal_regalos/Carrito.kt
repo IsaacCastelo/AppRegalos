@@ -12,7 +12,6 @@ import androidx.core.view.WindowInsetsCompat
 class Carrito : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_carrito)
 
         val btnInicio = findViewById<ImageButton>(R.id.Inicio)

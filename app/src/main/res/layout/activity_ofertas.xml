@@ -20,14 +20,15 @@
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/jomhuria"
             android:text="@string/ofertas"
-            android:textSize="36sp"
+            android:textSize="56sp"
             android:textStyle="bold"
             android:textColor="@color/rosa"/>
 
         <ImageView
             android:id="@+id/ofertasDiario"
             android:layout_width="match_parent"
-            android:layout_height="295dp"
+            android:layout_height="456dp"
+            android:padding="10dp"
             app:srcCompat="@drawable/pedidosbackground" />
 
     </LinearLayout>
@@ -36,30 +37,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/jomhuria"
-            android:text="@string/rebajas"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            android:textColor="@color/rosa"/>
-
-        <ImageView
-            android:id="@+id/rebajasDiario"
-            android:layout_width="match_parent"
-            android:layout_height="293dp"
-            app:srcCompat="@drawable/pedidosbackground" />
-
-    </LinearLayout>
+        android:orientation="vertical"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="175dp"
         android:background="@color/navbar"
         android:orientation="horizontal"
         android:gravity="bottom"

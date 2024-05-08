@@ -11,8 +11,8 @@ import androidx.core.view.WindowInsetsCompat
 class TipoPago : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_tipo_pago)
+
         val btnPagoTienda = findViewById<Button>(R.id.btn_pagoTienda)
         val btnPagoTarjeta = findViewById<Button>(R.id.btn_pagoTarjeta)
 

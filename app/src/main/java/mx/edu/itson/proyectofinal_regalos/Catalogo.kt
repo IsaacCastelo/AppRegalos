@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity
 class Catalogo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_catalogo)
 
         // MOSTRAR PRODUCTOS DEL CATÁLOGO

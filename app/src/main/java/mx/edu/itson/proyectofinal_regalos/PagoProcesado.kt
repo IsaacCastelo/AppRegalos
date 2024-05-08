@@ -8,18 +8,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class PagoTarjeta : AppCompatActivity() {
+class PagoProcesado : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pago_tarjeta)
+        setContentView(R.layout.activity_pago_procesado)
 
-        val btnConfirmarPago = findViewById<Button>(R.id.btn_confirmar_pago)
+        val btnVolverInicio = findViewById<Button>(R.id.btnVolverInicio)
 
-        btnConfirmarPago.setOnClickListener {
+        btnVolverInicio.setOnClickListener {
             // Abre la actividad de tipo pago al hacer clic en el botón
-            val intent = Intent(this, PagoProcesado::class.java)
+            val intent = Intent(this, InicioTienda::class.java)
             startActivity(intent)
         }
-
     }
 }
