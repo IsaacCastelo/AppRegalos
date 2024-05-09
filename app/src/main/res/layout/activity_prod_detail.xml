@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/pastel">
 
@@ -12,20 +12,40 @@
 
         <ImageView
             android:id="@+id/prod_image_cell"
-            android:layout_width="85dp"
-            android:layout_height="113dp"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
             android:layout_gravity="center"
-            android:scaleType="fitXY" />
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/regaloazul" />
 
         <TextView
             android:id="@+id/prod_price_cell"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
             android:textSize="25sp"
+            android:text="Precio del producto"
             android:fontFamily="@font/jomhuriaregular"
             android:gravity="center" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/azulCielo"
+            android:layout_marginHorizontal="15dp" />
+
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btnAgregarCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:background="@drawable/round_button"
+        android:paddingHorizontal="@dimen/paddingButton"
+        android:text="Agregar al carrito" />
 
 </LinearLayout>
