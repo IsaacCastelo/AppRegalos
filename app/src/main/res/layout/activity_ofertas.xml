@@ -8,7 +8,6 @@
     android:orientation="vertical"
     tools:context=".InicioTienda">
 
-    <!-- ImageView con texto "Ofertas del día" -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,12 +23,42 @@
             android:textStyle="bold"
             android:textColor="@color/rosa"/>
 
-        <ImageView
-            android:id="@+id/ofertasDiario"
+        <GridView
+            android:id="@+id/gridView"
             android:layout_width="match_parent"
-            android:layout_height="456dp"
-            android:padding="10dp"
-            app:srcCompat="@drawable/pedidosbackground" />
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cumplecheve" />
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/precioOriginal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/precioOferta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp" />
+
+
 
     </LinearLayout>
 
