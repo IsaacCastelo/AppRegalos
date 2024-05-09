@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     android:background="@color/pastel"
     android:orientation="vertical"
-    tools:context=".InicioTienda">
+    tools:context=".Ofertas">
 
-    <!-- ImageView con texto "Ofertas del día" -->
+    <!-- Sección de "Ofertas del día" -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,26 +19,50 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/jomhuria"
-            android:text="@string/ofertas"
-            android:textSize="56sp"
+            android:text="@string/ofertas_del_dia"
+            android:textSize="36sp"
             android:textStyle="bold"
             android:textColor="@color/rosa"/>
-
-        <ImageView
-            android:id="@+id/ofertasDiario"
-            android:layout_width="match_parent"
-            android:layout_height="456dp"
-            android:padding="10dp"
-            app:srcCompat="@drawable/pedidosbackground" />
-
     </LinearLayout>
 
-    <!-- ImageView con texto "Rebajas del día" -->
-    <LinearLayout
+    <!-- GridView para mostrar las ofertas -->
+    <GridView
+        android:id="@+id/gridView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"/>
+        android:numColumns="2"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:padding="10dp"/>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cumplecheve" />
 
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/precioOriginal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/precioOferta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+    <!-- Barra de navegación -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="90dp"
@@ -52,8 +76,8 @@
             android:id="@+id/Inicio"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="@color/transparent"
             android:layout_weight="1"
+            android:background="@color/transparent"
             android:contentDescription="Inicio"
             android:src="@drawable/ic_inicio"
             android:onClick="onInicioClick" />
@@ -62,8 +86,8 @@
             android:id="@+id/Catalogo"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="@color/transparent"
             android:layout_weight="1"
+            android:background="@color/transparent"
             android:contentDescription="Catálogo"
             android:src="@drawable/ic_catalogo"
             android:onClick="onCatalogoClick" />
@@ -72,8 +96,8 @@
             android:id="@+id/Ofertas"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="@color/transparent"
             android:layout_weight="1"
+            android:background="@color/transparent"
             android:contentDescription="Ofertas"
             android:src="@drawable/ic_ofertas" />
 
@@ -81,8 +105,8 @@
             android:id="@+id/Carrito"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="@color/transparent"
             android:layout_weight="1"
+            android:background="@color/transparent"
             android:contentDescription="Carrito"
             android:src="@drawable/ic_carrito"
             android:onClick="onCarritoClick" />
@@ -91,12 +115,11 @@
             android:id="@+id/Perfil"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="@color/transparent"
             android:layout_weight="1"
+            android:background="@color/transparent"
             android:contentDescription="Perfil"
             android:src="@drawable/ic_perfil"
             android:onClick="onPerfilClick" />
-
     </LinearLayout>
 
 </LinearLayout>
