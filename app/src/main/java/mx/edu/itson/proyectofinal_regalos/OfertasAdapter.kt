@@ -24,16 +24,38 @@ class OfertasAdapter(private val context: Context, private val ofertas: List<ofe
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-        val oferta = this.getItem(position) as oferta
+        val oferta = getItem(position) as oferta
+        val viewHolder: ViewHolder
+        val view: View
 
-        var inflator = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        var ofertaView = inflator.inflate(R.layout.activity_ofertas, null)
-        ofertaView.findViewById<ImageView>(R.id.image).setImageResource(oferta.imagen)
-        ofertaView.findViewById<TextView>(R.id.nombre).text = oferta.nombre
-        ofertaView.findViewById<TextView>(R.id.precioOriginal).text = "$${oferta.precioOriginal}"
-        ofertaView.findViewById<TextView>(R.id.precioOferta).text = "$${oferta.precioOferta}"
+        if (convertView == null) {
+            view = LayoutInflater.from(context).inflate(R.layout.activity_ofertas, parent, false)
+            viewHolder = ViewHolder(
+                view.findViewById(R.id.image),
+                view.findViewById(R.id.nombre),
+                view.findViewById(R.id.precioOriginal),
+                view.findViewById(R.id.precioOferta)
+            )
+            view.tag = viewHolder
+        } else {
+            view = convertView
+            viewHolder = view.tag as ViewHolder
+        }
 
-        return ofertaView
+        viewHolder.image.setImageResource(oferta.imagen)
+        viewHolder.nombre.text = oferta.nombre
+        viewHolder.precioOriginal.text = "$${oferta.precioOriginal}"
+        viewHolder.precioOferta.text = "$${oferta.precioOferta}"
+
+        return view
     }
+
+    private class ViewHolder(
+        val image: ImageView,
+        val nombre: TextView,
+        val precioOriginal: TextView,
+        val precioOferta: TextView
+    )
+
 
 }
