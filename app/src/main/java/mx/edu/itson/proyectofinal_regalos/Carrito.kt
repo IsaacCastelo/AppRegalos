@@ -78,29 +78,32 @@ class Carrito : AppCompatActivity() {
             val intent = Intent(this, TipoPago::class.java)
             startActivity(intent)
         }
-
-
     }
 
     private fun obtenerProductosDelCarrito() {
         var contenedorProductos: LinearLayout = findViewById(R.id.contenedorProductos)
         var totalPrecio = 0.0
+        val precioTotal: TextView = findViewById(R.id.precioTotal)
         carritoRef.addValueEventListener(object : ValueEventListener {
-            @SuppressLint("StringFormatInvalid")
             override fun onDataChange(snapshot: DataSnapshot) {
                 contenedorProductos.removeAllViews()
                 for (productoSnapshot in snapshot.children) {
+                    // Obtener los datos del producto
                     val imagen = productoSnapshot.child("imagen").getValue(Int::class.java) ?: 0
                     val precioS = productoSnapshot.child("precio").getValue(String::class.java) ?: ""
-
-                    val precio = precioS.toDoubleOrNull() ?: 0.0
+                    // Convertir precioS a Double
+                    val precioSinDolar = precioS.replace("$", "")
+                    val precio = precioSinDolar.toIntOrNull() ?: 0
                     totalPrecio += precio
-
+                    // Crear la vista del producto en el carrito
                     val productoView = crearProductoView(imagen, precioS)
                     contenedorProductos.addView(productoView)
                 }
-                val precioTotal: TextView = findViewById(R.id.precioTotal)
-                precioTotal.text = getString(R.string.total, totalPrecio)
+                // Escribir el formato para el precio total
+                precioTotal.text = buildString {
+                    append("Total: $")
+                    append(String.format("%.2f", totalPrecio))
+                }
             }
 
             override fun onCancelled(error: DatabaseError) {
