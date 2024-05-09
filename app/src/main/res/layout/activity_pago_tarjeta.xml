@@ -11,11 +11,20 @@
     <ImageView
         android:id="@+id/logoHappyBox"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="175dp"
         app:srcCompat="@drawable/grupo2" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/jomhuria"
+        android:text="@string/infoTarj"
+        android:textColor="@color/rosa"
+        android:textSize="40sp" />
+
     <EditText
-        android:id="@+id/et_nombretitular"
+        android:id="@+id/et_nombreTitular"
         android:layout_width="300dp"
         android:layout_height="49dp"
         android:fontFamily="@font/jomhuria"
@@ -86,22 +95,69 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.719" />
 
+
+
     </LinearLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/jomhuria"
+        android:text="@string/direccionText"
+        android:textColor="@color/rosa"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/calleDir"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/jomhuria"
+        android:hint="@string/calleDirText"
+        android:inputType="text"
+        android:textSize="28dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numCasa"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/jomhuria"
+        android:hint="@string/numCasa"
+        android:inputType="number"
+        android:textSize="28dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/descripcionCasa"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/jomhuria"
+        android:hint="@string/descripcionCasa"
+        android:inputType="text"
+        android:textSize="28dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_confirmar_pago"
-        android:layout_width="160dp"
+        android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="125dp"
+        android:layout_gravity="center_horizontal"
         android:fontFamily="@font/jomhuria"
         android:text="@string/confPago"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.869" />
+        android:textSize="30dp" />
 
 
 </LinearLayout>

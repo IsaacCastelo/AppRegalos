@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProyectoFinal_Regalos"
         tools:targetApi="31">
         <activity
+            android:name=".OfertasAdapter"
+            android:exported="false" />
+        <activity
             android:name=".PagoProcesado"
             android:exported="false" />
         <activity

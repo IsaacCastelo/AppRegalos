@@ -29,4 +29,10 @@
     <string name="ActInfo">Actualizar Información</string>
     <string name="VolverInicio">Volver al Inicio</string>
     <string name="PagoProcesado">Pago Procesado!</string>
+    <string name="direccionText">Dirección</string>
+    <string name="calleDirText">Calle</string>
+    <string name="infoTarj">Información Tarjeta</string>
+    <string name="numCasa">Numero de la Casa</string>
+    <string name="ofertas_del_dia">Ofertas del día</string>
+    <string name="descripcionCasa">Descripción de la Casa</string>
 </resources>
