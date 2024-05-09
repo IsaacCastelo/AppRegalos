@@ -31,7 +31,7 @@ class OfertasAdapter(private val context: Context, private val ofertas: List<ofe
         if (convertView == null) {
             view = LayoutInflater.from(context).inflate(R.layout.activity_ofertas, parent, false)
             viewHolder = ViewHolder(
-                view.findViewById(R.id.image),
+                view.findViewById(R.id.imageView2),
                 view.findViewById(R.id.nombre),
                 view.findViewById(R.id.precioOriginal),
                 view.findViewById(R.id.precioOferta)
